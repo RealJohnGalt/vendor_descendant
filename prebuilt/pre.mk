@@ -19,11 +19,24 @@ PRODUCT_PACKAGES += \
         CameraRoll \
         KiwiBrowser \
         Markup \
-        RetroMusicPlayer \
         OpenCamera \
         SimpleCalculator \
         AmazeFileManager
 
+#G6 shit
+#PRODUCT_PACKAGES += \
+#        DaxUI
+
+PRODUCT_COPY_FILES += \
+        vendor/descendant/prebuilt/libs/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
+        vendor/descendant/prebuilt/libs/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
+        vendor/descendant/prebuilt/libs/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
+        vendor/descendant/prebuilt/etc/perfservice.rc:system/etc/perfservice.rc
+
+#PRODUCT_COPY_FILES += \
+#        vendor/descendant/prebuilt/libs/lib/vendor.dolby.hardware.dms@1.0.so:system/lib/vendor.dolby.hardware.dms@1.0.so \
+#	vendor/descendant/prebuilt/sysconfig/hiddenapi-whitelist-com.dolby.dax2appUI.xml:/system/etc/sysconfig/hiddenapi-whitelist-com.dolby.dax2appUI.xml \
+#	vendor/descendant/prebuilt/permissions/com.dolby.dax2appUI.xml:/system/etc/permissions/com.dolby.dax2appUI.xml
 
 #APKs libs
 PRODUCT_COPY_FILES += \
@@ -35,7 +48,7 @@ PRODUCT_COPY_FILES += \
         vendor/descendant/prebuilt/configs/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Turbo
-PRODUCT_PACKAGES += \
-        Turbo \
-        turbo.xml \
-        privapp-permissions-turbo.xml
+#PRODUCT_PACKAGES += \
+#        Turbo \
+#        turbo.xml \
+#        privapp-permissions-turbo.xml
